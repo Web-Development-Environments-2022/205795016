@@ -1,28 +1,28 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<style>
-    #gradient1 {
-        height: 200px;
-        background-color: aqua;
-    }
-</style>
+
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#photos">My Photos</a></li>
-    <li><a href="#playlist">My Playlist</a></li>
-    <li><a href="#like">Like</a></li>
-    <li><a href="#qrcoder">QR code</a></li>
-    <li><a href="#spa">Q&A</a></li>
-    <li><a href="#contact">Contact Me</a></li>
-</ul>
-</div>
+    <div id="menu">
+        <div id="logo">
 
-<section id="about" class="section" >
+            <img src="https://media.wired.com/photos/5b981cef38fa9f07e6afd832/2:1/w_660,h_330,c_limit/Lightsaber-better-660.jpg" height="90">
+
+        </div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qrcoder">QR code</a></li>
+            <li><a href="#spa">Q&A</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+    <br/>
+<section id="about" class="section">
 <br/>
 <br/>
 <br/>
@@ -31,13 +31,13 @@
 <br/>
 <br/>
 <br/>
-<a style="background-color: black;"><B style="color: aliceblue;"> About me:</B></a><br/>
+<a style="background-color: black;" ><B style="color: aliceblue;"> About me:</B></a><br/>
 <a style="background-color: black;"><P style="color: aliceblue;">Hi my name is Luke Skywalker, but everyone calls me Luke.</a><br/>
 <a style="background-color: black;">I am a legendary Jedi Master who fought in the Galactic Civil War during the reign of the Galactic Empire.</a><br/>
 <a style="background-color: black;">Along with my companions, Princess Leia Organa and General Han Solo, we served as a revolutionary on the side of the Alliance to Restore the Republic—an organization committed to the downfall of the Galactic Empire and the restoration of democracy.</a><br/>
 <a style="background-color: black;">Following the war, I became a living legend, and will be remembered as one of the greatest Jedi in galactic history.</a><br/>
 <a style="background-color: black;">I am the son of Jedi Knight Anakin Skywalker and Senator Padmé Amidala.</a><br/>
-<a style="background-color: black;">I was born along with my twin sister, Leia, in 19 BBY. As a result of Amidala's death and Anakin's fall to the dark side of the Force, me and Liea were separated and sent into hiding, with Leia adopted by the royal family of Alderaan while Luke was raised by his relatives on Tatooine.</P></a><br/>
+<a style="background-color: black;">I was born along with my twin sister, Leia, in 19 BBY. As a result of Amidala's death and Anakin's fall to the dark side of the Force, me and Liea were separated and sent into hiding, with Leia adopted by the royal family of Alderaan while I was raised by my relatives on Tatooine.</P></a><br/>
 
 <br/>
 </section>
@@ -195,6 +195,18 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
+ </script>
+ <script>
+     $(window).scroll(function(){
+    if ($(window).scrollTop() >= 200)
+    {
+        $("#menu").css({position:'fixed',left:'0',top:'0'});
+    }
+    else
+    {
+        $("#menu").css({position:'absolute',left:'0',top:'200px'});
+    }
+});
  </script>
 </body>
 </html>
