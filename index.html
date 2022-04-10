@@ -132,8 +132,21 @@
  <for_like>
     <div class="fb-like" data-href="http://127.0.0.1:5500/3rdAgeWeb.html" data-width="500" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div></for_like></td></tr>
 </table>
+<div class = 'page-container'>
+    <div class = 'header'>
+    </div>
+    <div class = 'cube-container'>
+      <div class = 'cube'>
+        <div class = 'cube-face front'></div>
+        <div class = 'cube-face back'></div>
+        <div class = 'cube-face left'></div>
+        <div class = 'cube-face right'></div>
+        <div class = 'cube-face top'></div>
+        <div class = 'cube-face bottom'></div>
+      </div>
+    </div>
+  <div>
 
-<!-- <div class="heart"></div> -->
  <br/>
 </section>
 
@@ -309,18 +322,7 @@ scan my code
 
 </table>
 </h3>
-<!-- <br/><h1>
-    <p style="color: #ffc909;" >(1</p> <br>
-</h1>
-<h2>
-    <p style="color: #ffc909;" >בין וייב 1.0 לוייב 2.0 ווייב 3.0 ישנם מספר הבדלים מהותיים קודם כל ההבדל הראשון כבר בין וייב 1.0 ל2.0 ו3.0 היינו שוייב 1.0 הוא סטטי ומיועד רק לקריאה, משהו שבאותה תקופה סיפק את רוב בעלי האתרים מכיוון שהם רצו שהמידע שלהם יהיה מפורסם לכולם בכל עת. </p><br>
-    <p style="color: #ffc909;" >לכן בעצם ניתן לראות שוייב 1.0 הוא סטטי כאשר כמובן הגרסאות המתקדמות כבר מספקות אתרים דינאמים. </p><br>
-    <p style="color: #ffc909;" >וייב 2.0 מאפשר שיתופיות כלומר הטכנולוגיה השתפרה ואפשרה לאנשים לשתף דברים בעצמם ברשת וכך נוצרו בלוגים ורשתות חברתיות, כמובן שאתרים מוכרים באותו הזמן היו אתרים כמו ebay ו amazon, כל השתיפויות הזאתי לא הייתה אפשרית בגרסה הקודמת (וייב 1.0). </p><br>
-    <p style="color: #ffc909;" >לבסוף הגיע הגרסה השלישית של הוייב שנקראת וייב 3.0 , היא הביאה לעולם האתרים את המחשבה של בינה מלאכותית ובנוסף וייב 3.0 הציג את IoT (Internet of things) כלומר שניתן להתחבר למכשירים דרך האינטרנט ולדוגמה ניתן להדליק את המזגן הבייתי באמצעות חיבור לרשת ולשלוח פקודות כך שידליקו אותו.  </p><br>
-</h2>
-<h1>
-    <p style="color: #ffc909;" >(2</p> <br>
-</h1> -->
+
 <br/>
 <br/>
 <br/>
@@ -350,6 +352,42 @@ contact me
 </section>
 
 
+<div class="container"> 
+    <div class="saber-card" onmouseover="PlaySound('mySound')" onmouseleave="StopSound('mySound')">
+       <div class="saber">
+          <div class="light lightsaber-1"></div>
+          <img src="https://assets.codepen.io/2362831/Asset+2.png" />
+       </div>
+       <div class="shadow"></div>
+    </div>
+    <div class="saber-card" onmouseover="PlaySound('mySound')" onmouseleave="StopSound('mySound')">
+       <div class="saber">
+          <div class="light lightsaber-2"></div>
+          <img style="max-width: 35px;" src="https://assets.codepen.io/2362831/Asset+3.png" />
+       </div>
+       <div class="shadow"></div>
+    </div>
+    
+    <div class="saber-card" onmouseover="PlaySound('mySound')" onmouseleave="StopSound('mySound')">
+       <div class="saber">
+          <div class="light lightsaber-3"></div>
+          <img style="max-width: 33px;" src="https://assets.codepen.io/2362831/Asset+6.png" />
+       </div>
+       <div class="shadow"></div>
+    </div>
+    
+    <div class="saber-card" onmouseover="PlaySound('mySound')" onmouseleave="StopSound('mySound')">
+       <div class="saber">
+          <div class="light lightsaber-4"></div>
+          <img style="max-width: 35px;" src="https://assets.codepen.io/2362831/Asset+7.png" />
+       </div>
+       <div class="shadow"></div>
+    </div>
+ </div>
+ 
+ <audio id='mySound' src='https://assets.codepen.io/2362831/8d82b5_Lightsaber_Igniting_Sound_Effect.mp3'/>
+
+
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -375,8 +413,18 @@ $(function(){
     }
 });
  </script>
+ <script type="text/javascript">
+     function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+    thissound.volume = 0.2;
+}
 
-
- 
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+ </script>
 </body>
 </html>
