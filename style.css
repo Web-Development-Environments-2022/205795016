@@ -114,6 +114,14 @@ h3 {
 	transform: scale(1.1);
 }
 
+.for_like {
+	display: block;  
+	margin-left: 50%;
+	margin-right: auto;
+	width: 180px;
+	height: 180px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
