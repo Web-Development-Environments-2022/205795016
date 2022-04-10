@@ -118,7 +118,7 @@
 <br/>
 <br/>
 <h1 style="color: #ffc909;">
-    give me a like
+    give me a like<br> and may the force be with you
 </h1>
 <br/>
 <br/>
@@ -364,7 +364,27 @@
 <br/>
 <br/>
 <br/>
-contact me
+<h1>
+    contact me
+</h1>
+<br/>
+<a style="color: #ffc909;" href="mailto:dhodisan@gmail.com
+subject = subject text">why not sending an Email?
+</a>
+<br/>
+<br/>
+<br/>
+
+
+<from action="https://formsubmit.co/dhodisan@gmail.com" method="post">
+    <input type="hidden" name="_subject" value="new email woooo!">
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="message" placeholder="write your message here" required> 
+    <button type="submit">Send</button>
+</from>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -447,5 +467,20 @@ function StopSound(soundobj) {
  </script>
  <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
 </script>
-</body>
+<php>
+
+
+if($_POST["message"]) {
+
+
+mail("dhodisan@gmail.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "dhodisan@gmail.com");
+
+
+}
+
+
+</php></body>
 </html>
