@@ -368,20 +368,47 @@
     contact me
 </h1>
 <br/>
-<a style="color: #ffc909;" href="mailto:dhodisan@gmail.com
+<!-- <a style="color: #ffc909;" href="mailto:dhodisan@gmail.com
 subject = subject text">why not sending an Email?
-</a>
+</a> -->
 <br/>
 <br/>
 <br/>
 
 
-<from action="https://formsubmit.co/dhodisan@gmail.com" method="post">
+<!-- <from action="mailto:dhodisan@gmail.com" method="POST">
     <input type="hidden" name="_subject" value="new email woooo!">
     <input type="email" name="email" placeholder="Email Address" required>
     <input type="text" name="message" placeholder="write your message here" required> 
     <button type="submit">Send</button>
-</from>
+</from> -->
+<!-- <form action=”mailto:dhodisan@gmail.com”
+
+method=”POST”
+
+enctype=”multipart/form-data”
+
+name=”EmailTestForm”>
+<a style="color: #ffc909;">
+    Name:<br>
+</a>
+
+<input type=”text” size=”24″ name=”VisitorName”><br><br>
+<a style="color: #ffc909">
+    Message:<br> <textarea name=”VisitorComment” rows=”4″ cols=”20″>
+</a>
+
+</textarea><br><br> <button type=”submit” value=”Submit”> </form> -->
+<!-- 
+<form method=”post” name=”contact_form” action=”contact-form-handler.php”> Your Name: <input type=”text” name=”name”> Email Address:
+
+    <input type=”text” name=”email”> Message:
+    
+    <textarea name=”message”></textarea>
+    
+    <input type=”submit” value=”Submit”>
+    
+    </form> -->
 <br/>
 <br/>
 <br/>
@@ -467,20 +494,5 @@ function StopSound(soundobj) {
  </script>
  <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
 </script>
-<php>
-
-
-if($_POST["message"]) {
-
-
-mail("dhodisan@gmail.com", "Here is the subject line",
-
-
-$_POST["insert your message here"]. "dhodisan@gmail.com");
-
-
-}
-
-
-</php></body>
+</body>
 </html>
