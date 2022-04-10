@@ -122,7 +122,16 @@ h3 {
 	height: 180px;
 }
 
-.topnav {
+.for_qr{
+	display: block;  
+	margin-left: 20%;
+	margin-right: auto;
+	width: 180px;
+	height: 180px;
+}
+
+
+/* .topnav {
   overflow: hidden;
   background-color: #333;
 }
@@ -144,7 +153,7 @@ h3 {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
-}
+} */
 
 
 
@@ -509,3 +518,4 @@ h3 {
 	   width: 15px;
 	}
  }
+ 
