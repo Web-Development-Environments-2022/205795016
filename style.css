@@ -62,12 +62,12 @@ body {
 
 .wrapper{
 	display: flex;
-	height: 100%;
-	width: 60%;
+	height: 10%;
+	width: 70%;
 	margin: 0 auto;
 	perspective: 450px;
-	mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
-	-webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+	/* mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+	-webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%); */
   
 
 }
@@ -75,14 +75,46 @@ body {
 .scroll-text{
 	color: #ffc909;
 	font-size: 2vw;
-	line-height: 1em;
+	/* line-height: 1em; */
 	font-weight: bold;
 	text-align: justify;
 	position: relative;
-	animation: scroll 120s linear infinite ;
+	animation: scroll 60000S linear infinite ;
 	/* animation-duration: 15s; */
 	/* transform:  translateZ(-2500px) rotateX(20deg); */
 }
+
+form1{
+
+	/* background: #fff; */
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+
+}
+form1 input{
+	padding: 15px;
+	background: #ff5361;
+	color: #fff;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 10px auto 0;
+	border-radius: 30px;
+}
+
+marquee{
+	z-index: -1;
+	mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+	-webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+}
+
+
 h1{
 	text-align: center;
 	font-size: 45px;
@@ -105,10 +137,12 @@ h3 {
 
 .gallery {
 	margin: 10px , 50px;
+	
 }
 .gallery img {
 	transition: 1s ;
 	padding: 15px;
+	
 
 }
 .gallery img:hover {
@@ -520,4 +554,54 @@ h3 {
 	   width: 15px;
 	}
  }
- 
+
+
+.container_new{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 10%;
+	height: 100vh;
+	background: #001660;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+form{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+}
+form h3{
+	color: #555;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+form input,textarea{
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: #f5f5f5;
+	font-size: 16px;
+
+}
+
+form button{
+	padding: 15px;
+	background: #ff5361;
+	color: #fff;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 30px;
+}
+
